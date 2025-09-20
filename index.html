@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" style="--top1: 18.3%; --left1: 47.7%; --w1: 21.6%; --h1: 27.5%; --rotZ1: 0.4deg; --rotY1: -51.7deg; --rotX1: -4.4deg; --skX1: -6.1deg; --skY1: 0deg; --tlx1: 0%; --tly1: 0%; --trx1: 0%; --try1: 0%; --brx1: 0%; --bry1: 0%; --blx1: 0%; --bly1: 0%; --top2: 6.6%; --left2: 38.5%; --w2: 23.5%; --h2: 28.2%; --rotZ2: -3.2deg; --rotY2: -48.9deg; --rotX2: 1deg; --skX2: -5.5deg; --skY2: 0deg; --posx2: 19%; --top3: 1.9%; --left3: 31%; --w3: 21.4%; --h3: 24.9%; --rotZ3: -3.2deg; --rotY3: -45.1deg; --skX3: -5deg; --rotX3: 0deg; --skY3: 0deg; --tlx3: 3%; --tly3: 3%; --trx3: 3%; --try3: 3%; --brx3: 3%; --bry3: 3%; --blx3: 3%; --bly3: 3%; --email-top: 121px; --email-left: 1226px; --phone-top: 53px; --phone-left: 1226px; --book-top: 197px; --book-left: 1168px; --book-scale: 1.4500000000000004; --privacy-top: 407px; --privacy-left: 1232px; --terms-top: 457px; --terms-left: 1234px; --s: 0.9622222222222222; --phone-scale: 1.5000000000000004; --email-scale: 1.4000000000000004; --privacy-scale: 1.2000000000000002; --terms-scale: 1.2000000000000002; --posx1: 62%; --posy1: 23%; --posy2: 44%; --bookOffice-top: 266px; --bookOffice-left: 1231px; --bookVirtual-top: 199px; --bookVirtual-left: 1231px; --bookVirtual-scale: 1.3500000000000003; --bookOffice-scale: 1.3000000000000003;">
-<head><meta charset="UTF-8">
+<html lang="fr" style="--top1: 18.3%; --left1: 47.7%; --w1: 21.6%; --h1: 27.5%; --rotZ1: 0.4deg; --rotY1: -51.7deg; --rotX1: -4.4deg; --skX1: -6.1deg; --skY1: 0deg; --tlx1: 0%; --tly1: 0%; --trx1: 0%; --try1: 0%; --brx1: 0%; --bry1: 0%; --blx1: 0%; --bly1: 0%; --top2: 6.6%; --left2: 38.5%; --w2: 23.5%; --h2: 28.2%; --rotZ2: -3.2deg; --rotY2: -48.9deg; --rotX2: 1deg; --skX2: -5.5deg; --skY2: 0deg; --posx2: 19%; --top3: 1.9%; --left3: 31%; --w3: 21.4%; --h3: 24.9%; --rotZ3: -3.2deg; --rotY3: -45.1deg; --skX3: -5deg; --rotX3: 0deg; --skY3: 0deg; --tlx3: 3%; --tly3: 3%; --trx3: 3%; --try3: 3%; --brx3: 3%; --bry3: 3%; --blx3: 3%; --bly3: 3%; --email-top: 108px; --email-left: 1228px; --phone-top: 56px; --phone-left: 1227px; --book-top: 197px; --book-left: 1168px; --book-scale: 1.4500000000000004; --privacy-top: 365px; --privacy-left: 1227px; --terms-top: 423px; --terms-left: 1227px; --s: 0.9622222222222222; --phone-scale: 1.5000000000000004; --email-scale: 1.4000000000000004; --privacy-scale: 1.2000000000000002; --terms-scale: 1.2000000000000002; --posx1: 62%; --posy1: 23%; --posy2: 44%; --bookOffice-top: 251px; --bookOffice-left: 1232px; --bookVirtual-top: 199px; --bookVirtual-left: 1231px; --bookVirtual-scale: 1.3500000000000003; --bookOffice-scale: 1.3000000000000003;">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Accueil – Comptabilité</title>
 <style>
@@ -23,7 +23,7 @@
     --terms-top: 60px;  --terms-left: 20px;   --terms-scale: 1;
     --privacy-top: 90px;--privacy-left: 20px; --privacy-scale: 1;
 
-    /* ✅ Nouveaux : séparateurs élégants (déplaçables) */
+    /* Séparateurs élégants (déplaçables) */
     --sepEmail-top: 160px;  --sepEmail-left: 1226px;  --sepEmail-scale: 1;
     --sepOffice-top: 320px; --sepOffice-left: 1226px; --sepOffice-scale: 1;
   }
@@ -36,7 +36,9 @@
   .stage-outer{ position:relative; z-index:1; }
   .stage{ position:relative; width:calc(var(--base-w)*1px); height:calc(var(--base-h)*1px);
           transform:scale(var(--s)); transform-origin:top left; overflow:hidden; }
-  .background{position:absolute; inset:0; background:url("desk.jpg") center/cover no-repeat;}
+
+  /* 🔁 MAJ: image de fond en URL absolue */
+  .background{position:absolute; inset:0; background:url("https://vami-inc.com/desk.jpg") center/cover no-repeat;}
 
   /* Écrans */
   .screen{position:absolute; transform-origin: top left;}
@@ -75,13 +77,12 @@
   .contact-item.edit{outline:2px dashed #2aa3ff;background:#ffffff80;border-radius:8px;padding:4px 6px;cursor:move}
   .contact-item.selected{outline:3px solid #1e90ff}
 
-  /* ✅ Séparateurs élégants (fins, déplaçables) */
+  /* Séparateurs élégants (fins, déplaçables) */
   .separator{ position:absolute; display:block; width:420px; height:1.5px;
               background: linear-gradient(90deg,#cfd8ea,transparent 75%);
               border-radius: 1px; z-index:10; }
   #sepEmail{  top:var(--sepEmail-top);  left:var(--sepEmail-left);  transform:scale(var(--sepEmail-scale)); }
   #sepOffice{ top:var(--sepOffice-top); left:var(--sepOffice-left); transform:scale(var(--sepOffice-scale)); }
-  /* quand mode édition */
   .separator.edit{ outline:2px dashed #2aa3ff; background: linear-gradient(90deg,#bcd0ff,transparent 75%); }
 
   /* Bandeau d’aide (bas centré) */
@@ -96,42 +97,47 @@
   <!-- Scène -->
   <div class="stage-outer">
     <div class="stage" id="stage">
-<!-- Arrière-plan -->
-<div class="background" style="background:url('images/desk.jpg') center/cover no-repeat;"></div>
+      <div class="background"></div>
 
-<!-- Écrans -->
-<div class="screen s1"><div class="inner"><img src="images/services.jpg" alt="Services"></div></div>
-<div class="screen s2"><div class="inner"><img src="images/commerce.jpg" alt="Commerce"></div></div>
-<div class="screen s3"><div class="inner"><img src="images/construction.jpg" alt="Troisième"></div></div>
+      <!-- Écrans -->
+      <!-- 🔁 MAJ: services.jpg en URL absolue -->
+      <div class="screen s1"><div class="inner"><img src="https://vami-inc.com/services.jpg" alt="Services"></div></div>
+
+      <!-- (commerce laissé tel quel, aucune URL fournie) -->
+      <div class="screen s2"><div class="inner"><img src="./index_files/commerce.jpg" alt="Commerce"></div></div>
+
+      <!-- 🔁 MAJ: construction.jpg en URL absolue -->
+      <div class="screen s3"><div class="inner"><img src="https://vami-inc.com/construction.jpg" alt="Troisième"></div></div>
 
       <!-- Liens -->
-      <a id="emailLink" class="contact-item edit" href="mailto:info@vami-inc.com">📧 info@vami-inc.com</a>
-      <a id="phoneLink" class="contact-item edit" href="tel:+14389011042">📞 +1 (438) 901-1042</a>
+      <a id="emailLink" class="contact-item" href="mailto:info@vami-inc.com">📧 info@vami-inc.com</a>
+      <a id="phoneLink" class="contact-item" href="tel:+14389011042">📞 +1 (438) 901-1042</a>
 
-      <!-- ✅ Séparateur sous l’e-mail -->
-      <span id="sepEmail" class="separator edit"></span>
+      <!-- Séparateur sous l’e-mail -->
+      <span id="sepEmail" class="separator"></span>
 
-      <a id="bookVirtualLink" class="contact-item edit" href="https://outlook.office.com/book/RencontreVirtuelleTeamsZoom@vami-inc.com/?ismsaljsauthenabled" target="_blank">📅 Rendez-vous virtuel</a>
-      <a id="bookOfficeLink"  class="contact-item edit" href="https://outlook.office.com/book/Rencontreaubureau@vami-inc.com/?ismsaljsauthenabled" target="_blank">📅 Rencontre au bureau</a>
+      <a id="bookVirtualLink" class="contact-item" href="https://outlook.office.com/book/RencontreVirtuelleTeamsZoom@vami-inc.com/?ismsaljsauthenabled" target="_blank">📅 Rendez-vous virtuel</a>
+      <a id="bookOfficeLink" class="contact-item" href="https://outlook.office.com/book/Rencontreaubureau@vami-inc.com/?ismsaljsauthenabled" target="_blank">📅 Rencontre au bureau</a>
 
-      <!-- ✅ Séparateur sous “Rencontre au bureau” -->
-      <span id="sepOffice" class="separator edit"></span>
+      <!-- Séparateur sous “Rencontre au bureau” -->
+      <span id="sepOffice" class="separator"></span>
 
-      <a id="termsLink"   class="contact-item edit selected" href="file:///C:/Users/amold/OneDrive%20-%20VAMI%20Inc/_VAMI%20INC/FOND/site%20web/terms.html">📄 Conditions d'utilisation SMS</a>
-      <a id="privacyLink" class="contact-item edit" href="file:///C:/Users/amold/OneDrive%20-%20VAMI%20Inc/_VAMI%20INC/FOND/site%20web/privacy.html">🔒 Politique de confidentialité SMS</a>
+      <!-- 🔁 MAJ: liens légaux vers vami-inc.com -->
+      <a id="termsLink" class="contact-item" href="https://vami-inc.com/terms.html">📄 Conditions d'utilisation SMS</a>
+      <a id="privacyLink" class="contact-item" href="https://vami-inc.com/privacy.html">🔒 Politique de confidentialité SMS</a>
     </div>
   </div>
 
-  <div id="contactHint" class="contact-hint show">Mode édition des liens (P) : cliquer/drag • flèches (⇧×10) • molette ou +/- pour la taille</div>
+  <div id="contactHint" class="contact-hint">Mode édition des liens (P) : cliquer/drag • flèches (⇧×10) • molette ou +/- pour la taille</div>
 
   <!-- Panneau d’ajustement ÉCRANS -->
-  <div id="panel" style="display: block;">
+  <div id="panel" style="display: none;">
      <div class="row">
       <label>Écran</label>
       <select id="target">
         <option value="1">#1 (services.jpg)</option>
         <option value="2">#2 (commerce.jpg)</option>
-        <option value="3" selected>#3 (construction.jpg)</option>
+        <option value="3" selected="">#3 (construction.jpg)</option>
       </select>
     </div>
 
@@ -230,7 +236,7 @@
       terms:{top:'--terms-top',left:'--terms-left',scale:'--terms-scale',el:document.getElementById('termsLink')},
       privacy:{top:'--privacy-top',left:'--privacy-left',scale:'--privacy-scale',el:document.getElementById('privacyLink')},
 
-      /* ✅ Séparateurs */
+      /* Séparateurs */
       sepEmail:{top:'--sepEmail-top',left:'--sepEmail-left',scale:'--sepEmail-scale',el:document.getElementById('sepEmail')},
       sepOffice:{top:'--sepOffice-top',left:'--sepOffice-left',scale:'--sepOffice-scale',el:document.getElementById('sepOffice')}
     };
@@ -287,5 +293,3 @@
   </script>
 </body>
 </html>
-
-
