@@ -489,7 +489,7 @@
   // Mode édition + P
   const hint=document.getElementById('contactHint');
   let edit=false, activeKey=null, dragging=false, sx=0, sy=0, sTop=0, sLeft=0;
-
+/*
   document.addEventListener('keydown',e=>{
     if(e.key.toLowerCase()==='p'){
       const panel=document.getElementById('panel');
@@ -497,7 +497,7 @@
       toggleEdit(panel.style.display==='block');
     }
   });
-
+*/
   const VARS={
     email:{top:'--email-top',left:'--email-left',scale:'--email-scale',el:document.getElementById('emailLink')},
     phone:{top:'--phone-top',left:'--phone-left',scale:'--phone-scale',el:document.getElementById('phoneLink')},
@@ -590,4 +590,5 @@
 
 
 </body></html>
+
 
