@@ -477,17 +477,102 @@ background:
       .nav a:not(.keep) { display: none; }
     }
 
-    @media (max-width: 620px) {
-      .hero { background-position: 52% center; }
-      .topbar { padding: 18px; }
-      .brand { font-size: 15px; }
-      .hero-content { padding: 104px 18px 46px; }
-      h1 { font-size: clamp(42px, 14vw, 70px); }
-      .card { padding: 18px; border-radius: 22px; width: 100%; }
-      .grid { grid-template-columns: 1fr; }
-      footer { display: block; }
-      footer div + div { margin-top: 10px; }
-    }
+@media (max-width: 620px) {
+
+  .topbar {
+    padding: 14px 16px;
+    align-items: flex-start;
+  }
+
+  .brand {
+    font-size: 22px;
+    height: 48px;
+    padding: 0 14px;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .nav a:not(.keep) {
+    display: none;
+  }
+
+  .nav a.keep {
+    font-size: 13px;
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    min-height: auto;
+    overflow: visible;
+    background-position: 54% center;
+  }
+
+  .hero-content {
+    min-height: auto;
+    display: block;
+    padding: 115px 18px 42px;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  h1 {
+    font-size: clamp(42px, 13vw, 62px);
+    line-height: 1.02;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    padding: 14px 16px;
+    font-size: 18px;
+    line-height: 1.42;
+    margin-top: 22px;
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 56px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 28px 0 0;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .contact-row {
+    grid-template-columns: 32px 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer div + div {
+    margin-top: 10px;
+  }
+}
   </style>
 </head>
 
