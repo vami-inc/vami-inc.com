@@ -207,17 +207,44 @@
       -webkit-text-stroke: 1px rgba(90,105,125,.22);
     }
 
-    .subtitle {
-      margin: 26px 0 0;
-      max-width: 720px;
-      color: #16253d;
-      font-size: clamp(18px, 2vw, 24px);
-      line-height: 1.55;
-      font-weight: 650;
-      text-shadow:
-        0 1px 0 rgba(255,255,255,.22),
-        0 2px 8px rgba(255,255,255,.10);
-    }
+.subtitle {
+
+  margin: 26px 0 0;
+
+  max-width: 760px;
+
+  padding: 16px 20px;
+
+  border-radius: 22px;
+
+background:
+  linear-gradient(
+    135deg,
+    rgba(255,255,255,.045),
+    rgba(255,255,255,.018)
+  );
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255,255,255,.06);
+
+  color: #14233a;
+
+  font-size: clamp(18px, 2vw, 24px);
+
+  line-height: 1.55;
+
+  font-weight: 650;
+
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.22),
+    0 2px 8px rgba(255,255,255,.08);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    0 10px 30px rgba(0,0,0,.08);
+}
 
     .actions {
       display: flex;
