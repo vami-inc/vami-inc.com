@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <title>VAMI & Associés Inc. | Comptabilité, fiscalité et accompagnement PME</title>
   <meta name="description" content="VAMI & Associés Inc. accompagne les entrepreneurs et PME avec des services de comptabilité, fiscalité, paie et conseils d'affaires." />
 
@@ -41,7 +44,7 @@
           rgba(255,255,255,.02) 35%,
           rgba(255,255,255,0) 60%
         ),
-        url("fond.jpg");
+        url("fond.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -587,12 +590,201 @@ h1 {
     margin-top: 10px;
   }
 }
+
+    /* Identité VAMI — surcharges ciblées, structure responsive préservée */
+    :root {
+      --vami-royal: #051866;
+      --vami-light: #0092E6;
+      --vami-gray: #A0A8B8;
+      --accent: #0092E6;
+      --accent-soft: rgba(0,146,230,.20);
+    }
+    body { font-family: "Roboto", Arial, sans-serif; }
+    .hero {
+      background-image: linear-gradient(90deg, rgba(5,24,102,.56) 0%, rgba(5,24,102,.22) 45%, rgba(5,24,102,.12) 100%), url("fond.png");
+    }
+    /* Trueno Bold est une police de marque : ajouter son fichier web sous licence pour un rendu exact. */
+    h1, .section-title h2 { font-family: "Trueno", "Roboto", Arial, sans-serif; font-weight: 900; }
+    .brand {
+      font-family: "Trueno", "Roboto", Arial, sans-serif;
+      color: #FFFFFF;
+      -webkit-text-fill-color: #FFFFFF;
+      background-image: none;
+      background-color: rgba(5,24,102,.80);
+      letter-spacing: .015em;
+      text-shadow: 0 2px 7px rgba(0,0,0,.32);
+    }
+    .nav a { font-family: "Roboto", Arial, sans-serif; }
+    .eyebrow { background: rgba(5,24,102,.64); font-weight: 500; }
+    .subtitle {
+      color: #FFFFFF;
+      background: linear-gradient(135deg, rgba(5,24,102,.75), rgba(5,24,102,.50));
+      border-color: rgba(255,255,255,.23);
+      text-shadow: 0 2px 5px rgba(0,0,0,.35);
+      font-weight: 500;
+    }
+    .btn.primary {
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #0092E6, #006FC0);
+      border-color: rgba(255,255,255,.40);
+      box-shadow: 0 14px 32px rgba(5,24,102,.30), inset 0 1px 0 rgba(255,255,255,.35);
+    }
+    .btn.secondary { color: #051866; background: rgba(255,255,255,.82); }
+    .card { background: rgba(5,24,102,.72); }
+    .card h2 { color: #FFFFFF; font-weight: 700; }
+    .icon { background: rgba(0,146,230,.28); color: #FFFFFF; }
+    .label { color: #DDE9F7; font-weight: 700; }
+    .section { background: #051866; }
+    .section.alt { background: radial-gradient(circle at top right, rgba(0,146,230,.18), transparent 38%), #071D60; }
+    .section-title p, .service p { color: rgba(255,255,255,.84); }
+    footer { background: #031044; }
+    @media (max-width: 620px) {
+      .brand { letter-spacing: 0; }
+      .hero { background-position: 54% center; }
+    }
+
+    /* VAMI — version claire, typographie légère, logo officiel */
+    :root { --accent:#0092E6; --accent-soft:rgba(0,146,230,.14); --text:#051866; }
+    body { color:#051866; background:#F3F8FD; font-family:Roboto,Arial,sans-serif; }
+    .hero {
+      background-image:linear-gradient(90deg,rgba(246,252,255,.86) 0%,rgba(240,249,255,.78) 47%,rgba(231,245,255,.67) 100%),url("fond.png");
+      background-color:#EAF5FC;
+    }
+    .topbar { background:linear-gradient(180deg,rgba(247,252,255,.93),rgba(247,252,255,0)); gap:16px; }
+    .brand {
+      flex:0 1 auto; display:flex; align-items:center; justify-content:flex-start;
+      width:clamp(180px,24vw,350px); height:auto; min-height:55px;
+      padding:7px 12px; border-radius:16px; text-decoration:none;
+      background:rgba(255,255,255,.83); background-image:none;
+      border:1px solid rgba(5,24,102,.10);
+      box-shadow:0 7px 24px rgba(5,24,102,.07);
+      -webkit-text-fill-color:initial; color:inherit;
+    }
+    .brand img { display:block; width:100%; height:53px; object-fit:contain; object-position:left center; }
+    .nav a { color:#051866; background:rgba(255,255,255,.82); text-shadow:none; border:1px solid rgba(5,24,102,.09); }
+    .nav a:hover { background:#FFFFFF; }
+    .eyebrow { color:#051866; background:rgba(255,255,255,.85); border-color:rgba(5,24,102,.16); text-shadow:none; font-weight:500; }
+    h1 {
+      font-family:Roboto,Arial,sans-serif; font-size:clamp(35px,3.7vw,58px);
+      line-height:1.12; letter-spacing:-.035em; font-weight:700;
+      max-width:760px; color:#051866; text-shadow:none; -webkit-text-stroke:0;
+    }
+    .subtitle {
+      color:#25385B; font-size:clamp(16px,1.35vw,20px); line-height:1.52;
+      font-weight:400; background:rgba(255,255,255,.72);
+      border:1px solid rgba(5,24,102,.10); text-shadow:none;
+      box-shadow:0 8px 28px rgba(5,24,102,.05);
+    }
+    .btn { font-weight:700; }
+    .btn.primary { background:linear-gradient(135deg,#0092E6,#006FC0); color:#FFFFFF; box-shadow:0 10px 24px rgba(0,90,170,.16); }
+    .btn.secondary { background:rgba(255,255,255,.86); color:#051866; text-shadow:none; border-color:rgba(5,24,102,.15); }
+    .card {
+      background:rgba(255,255,255,.78); border-color:rgba(5,24,102,.14);
+      box-shadow:0 18px 44px rgba(5,24,102,.10);
+    }
+    .card h2 { color:#051866; text-shadow:none; font-size:22px; }
+    .contact-row { background:rgba(239,247,255,.68); border-color:rgba(5,24,102,.10); }
+    .contact-row a,.contact-row address { color:#051866; text-shadow:none; }
+    .icon { background:rgba(0,146,230,.14); color:#006FC0; text-shadow:none; }
+    .label { color:#526687; text-shadow:none; }
+    .section { background:#F2F8FE; color:#051866; }
+    .section.alt { background:#E7F2FC; }
+    .section-title h2 { font-family:Roboto,Arial,sans-serif; font-size:clamp(30px,3.4vw,48px); font-weight:700; }
+    .section-title p,.service p { color:#3B5275; }
+    .service { background:#FFFFFF; border-color:rgba(5,24,102,.12); }
+    .btn.secondary.dark { color:#051866; text-shadow:none; }
+    footer { background:#051866; color:rgba(255,255,255,.85); }
+    @media (max-width:980px) { .brand { width:clamp(170px,31vw,300px); } }
+    @media (max-width:620px) {
+      .topbar { align-items:center; gap:8px; }
+      .brand { width:clamp(132px,44vw,220px); min-height:44px; height:auto; padding:5px 8px; }
+      .brand img { height:36px; }
+      .nav a.keep { font-size:11px; padding:9px 10px; }
+      .hero { background-position:55% center; }
+      h1 { font-size:clamp(32px,8.5vw,45px); line-height:1.12; }
+      .subtitle { font-size:16px; }
+    }
+  
+    /* === Ajustements VAMI : identité et section Services === */
+    .hero {
+      background-image:
+        linear-gradient(90deg,rgba(246,252,255,.20) 0%,rgba(240,249,255,.12) 47%,rgba(231,245,255,.08) 100%),
+        url("fond.png");
+      background-position:center;
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+    .brand {
+      width:auto;
+      max-width:min(650px, 56vw);
+      min-height:65px;
+      gap:20px;
+      padding:10px 18px;
+    }
+    .brand img {
+      width:145px;
+      height:50px;
+      flex:0 0 auto;
+      object-fit:contain;
+    }
+    .brand-values {
+      display:grid;
+      grid-template-columns:repeat(2,max-content);
+      gap:5px 16px;
+      color:#051866;
+      font-family:Roboto,Arial,sans-serif;
+      font-size:13px;
+      font-weight:700;
+      line-height:1.25;
+      letter-spacing:.02em;
+      white-space:nowrap;
+    }
+    .brand-values b {color:#0092E6;font-weight:900;}
+    #services {
+      background-image:
+        linear-gradient(90deg,rgba(5,24,102,.78),rgba(5,24,102,.48)),
+        url("website_header_02.jpg");
+      background-color:#051866;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      color:#FFFFFF;
+    }
+    #services .section-title h2,
+    #services .service h3 {color:#FFFFFF;}
+    #services .section-title p,
+    #services .service p {color:rgba(255,255,255,.88);}
+    #services .service {
+      background:rgba(5,24,102,.55);
+      border:1px solid rgba(255,255,255,.22);
+      -webkit-backdrop-filter:blur(8px);
+      backdrop-filter:blur(8px);
+    }
+    @media (max-width:980px) {
+      .brand {width:auto;max-width:65vw;gap:10px;padding:7px 10px;}
+      .brand img {width:115px;height:42px;}
+      .brand-values {font-size:10px;gap:3px 8px;}
+    }
+    @media (max-width:620px) {
+      .brand {width:auto;max-width:62vw;min-height:44px;gap:7px;padding:5px 7px;}
+      .brand img {width:78px;height:32px;}
+      .brand-values {grid-template-columns:1fr;font-size:8px;gap:0;letter-spacing:0;}
+    }
+
   </style>
 </head>
 
 <body>
   <header class="topbar">
-    <div class="brand">VAMI & Associés Inc.</div>
+    <a class="brand" href="#accueil" aria-label="VAMI et Associés — Accueil">
+      <img src="VAMI_logo_Couleurs.png" alt="VAMI & Associés">
+      <span class="brand-values" aria-label="Vision, Analyse, Méthode, Innovation">
+        <span><b>V</b>ISION</span>
+        <span><b>A</b>NALYSE</span>
+        <span><b>M</b>ÉTHODE</span>
+        <span><b>I</b>NNOVATION</span>
+      </span>
+    </a>
     <nav class="nav" aria-label="Navigation principale">
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
@@ -601,11 +793,11 @@ h1 {
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="accueil">
       <div class="hero-content">
         <div>
           <div class="eyebrow">Cabinet comptable moderne pour entrepreneurs et PME</div>
-          <h1>COMPTABILITÉ, FISCALITÉ ET ACCOMPAGNEMENT D'ENTREPRISE.</h1>
+          <h1>Comptabilité, fiscalité et accompagnement d’entreprises.</h1>
           <p class="subtitle">
             Une approche professionnelle, structurée et moderne pour vous aider à garder le contrôle de vos obligations fiscales, de votre comptabilité et de votre croissance.
           </p>
